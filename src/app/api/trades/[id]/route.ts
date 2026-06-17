@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getTrade, cancelTrade } from "../../data";
+import { getTrade, cancelTrade } from "../data";
 
 export async function GET(req: Request) {
   const url = new URL(req.url);
