@@ -20,7 +20,7 @@ export async function POST(req: Request) {
       quantity,
       price,
       totalValue: Number((quantity * price).toFixed(2)),
-      status: "EXECUTED",
+      status: "EXECUTED" as const,
       notes: "Executed via mock API",
       createdAt: new Date().toISOString(),
       executedAt: new Date().toISOString(),
