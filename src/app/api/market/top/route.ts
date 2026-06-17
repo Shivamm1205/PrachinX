@@ -1,0 +1,103 @@
+import { NextResponse } from "next/server";
+
+export async function GET() {
+  const markets = [
+    {
+      symbol: "BTCUSDT",
+      priceChange: "450.00",
+      priceChangePercent: "1.65",
+      highPrice: "27850.00",
+      lowPrice: "26900.00",
+      volume: "83210.42",
+      lastPrice: "27750.00",
+    },
+    {
+      symbol: "ETHUSDT",
+      priceChange: "18.20",
+      priceChangePercent: "1.08",
+      highPrice: "1704.00",
+      lowPrice: "1652.00",
+      volume: "113420.35",
+      lastPrice: "1698.00",
+    },
+    {
+      symbol: "BNBUSDT",
+      priceChange: "5.20",
+      priceChangePercent: "1.34",
+      highPrice: "393.00",
+      lowPrice: "384.00",
+      volume: "61200.97",
+      lastPrice: "389.00",
+    },
+    {
+      symbol: "SOLUSDT",
+      priceChange: "0.62",
+      priceChangePercent: "0.45",
+      highPrice: "138.00",
+      lowPrice: "134.00",
+      volume: "52900.10",
+      lastPrice: "137.20",
+    },
+    {
+      symbol: "ADAUSDT",
+      priceChange: "0.08",
+      priceChangePercent: "1.90",
+      highPrice: "0.46",
+      lowPrice: "0.42",
+      volume: "121750.20",
+      lastPrice: "0.45",
+    },
+    {
+      symbol: "XRPUSDT",
+      priceChange: "0.015",
+      priceChangePercent: "1.24",
+      highPrice: "1.23",
+      lowPrice: "1.15",
+      volume: "94800.75",
+      lastPrice: "1.21",
+    },
+    {
+      symbol: "DOGEUSDT",
+      priceChange: "0.004",
+      priceChangePercent: "2.40",
+      highPrice: "0.18",
+      lowPrice: "0.16",
+      volume: "130120.50",
+      lastPrice: "0.17",
+    },
+    {
+      symbol: "MATICUSDT",
+      priceChange: "0.08",
+      priceChangePercent: "1.70",
+      highPrice: "4.85",
+      lowPrice: "4.35",
+      volume: "75520.60",
+      lastPrice: "4.65",
+    },
+    {
+      symbol: "LINKUSDT",
+      priceChange: "0.32",
+      priceChangePercent: "1.65",
+      highPrice: "19.60",
+      lowPrice: "18.50",
+      volume: "42800.10",
+      lastPrice: "19.20",
+    },
+    {
+      symbol: "AVAXUSDT",
+      priceChange: "0.42",
+      priceChangePercent: "2.20",
+      highPrice: "19.70",
+      lowPrice: "18.30",
+      volume: "31200.20",
+      lastPrice: "19.10",
+    },
+  ];
+
+  return NextResponse.json({
+    success: true,
+    message: "Top markets loaded",
+    data: markets,
+    timestamp: new Date().toISOString(),
+  });
+}
