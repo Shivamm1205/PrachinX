@@ -2,7 +2,7 @@
 import apiFetch from "../../../lib/api";
 import { useState, useEffect } from "react";
 
-const API = "http://localhost:8080";
+const API = "https://prachinx-backend.onrender.com";
 const getToken = () =>
   typeof window !== "undefined"
     ? localStorage.getItem("token") : "";
