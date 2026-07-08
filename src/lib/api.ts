@@ -1,4 +1,4 @@
-const API = "http://localhost:8080";
+const API = "https://prachinx-backend.onrender.com";
 
 export const getToken = (): string => {
   if (typeof window === "undefined") return "";
