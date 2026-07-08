@@ -1,4 +1,5 @@
-const API = "https://prachinx-backend.onrender.com";
+const API = process.env.NEXT_PUBLIC_API_URL 
+  || "https://prachinx-backend.onrender.com";
 
 export const getToken = (): string => {
   if (typeof window === "undefined") return "";
