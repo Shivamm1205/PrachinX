@@ -2,11 +2,11 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
- "scripts": {
+"scripts": {
   "dev": "next dev",
   "build": "next build",
   "start": "next start",
-  "lint": "echo 'Skipping lint'"
+  "lint": "echo 'lint skipped'"
 },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
