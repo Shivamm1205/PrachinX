@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "cross-env NODE_OPTIONS=--max_old_space_size=512 next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+     "lint": "next lint --no-lint-during-builds",
+    "start": "next start"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
