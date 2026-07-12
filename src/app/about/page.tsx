@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Logo from "../../components/logo";
+import Logo from "@/components/logo";
 
 export default function AboutPage() {
   return (
