@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useAuthStore } from "src/store/authStore";
 import { authService } from "src/services/auth.service";
-import Logo from "src/components/Logo";
+import Logo from "src/components/logo";
 import { useWindowSize } from "src/hooks/useWindowSize";
 
 export default function RegisterPage() {
