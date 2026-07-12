@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useWindowSize } from "../hooks/useWindowSize";
-import Logo from "../components/Logo";
+import { useWindowSize } from "@/hooks/useWindowSize";
+import Logo from "@/components/Logo";
 
 export default function Home() {
   const { isMobile } = useWindowSize();
