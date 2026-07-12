@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
-import Logo from "../Logo";
-import { useWindowSize } from "../../hooks/useWindowSize";
+import Logo from "@/Logo";
+import { useWindowSize } from "@/hooks/useWindowSize";
 
 const navItems = [
   { href: "/dashboard/overview", label: "Overview", icon: "📊" },
